@@ -15,9 +15,9 @@ latex:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/Fien14655179/nogeenkeer  # Jouw GitHub repo
-  path_to_book: docs  # Optioneel: pad naar bronbestanden
-  branch: main  # Welke branch gebruikt wordt voor links
+  url: https://github.com/Fien14655179/nogeenkeer
+  branch: main
+
 
 # HTML en opmaak
 html:
