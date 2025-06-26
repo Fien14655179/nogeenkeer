@@ -22,7 +22,7 @@ jobs:
 
       - run: pip install jupyter-book
 
-      - run: jupyter-book build docs
+      - run: jupyter-book build .
 
 
       - name: Deploy to GitHub Pages
