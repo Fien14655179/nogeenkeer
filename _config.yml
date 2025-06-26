@@ -1,42 +1,40 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Jupyter Book Template # Change this to your book title.
-author: Yen-Chia Hsu # Change this to your name (or your team/organization name).
+title: Jupyter Book Template  # Pas dit aan naar jouw titel
+author: Fien14655179  # Jouw naam of teamnaam
 
-# Force re-execution of notebooks on each build.
-# See https://jupyterbook.org/content/execute.html
+# Force re-execution of notebooks on each build
 execute:
   execute_notebooks: force
 
-# Define the name of the latex output file for PDF builds
+# Define the name of the LaTeX output file for PDF builds
 latex:
   latex_documents:
     targetname: book.tex
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/yenchiah/jupyter-book-template  # Online location of your book (change this to your GitHub repository link)
-  path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: main  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/Fien14655179/nogeenkeer  # Jouw GitHub repo
+  path_to_book: docs  # Optioneel: pad naar bronbestanden
+  branch: main  # Welke branch gebruikt wordt voor links
 
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+# HTML en opmaak
 html:
   use_issues_button: true
   use_repository_button: true
+  baseurl: /nogeenkeer/  # Nodig voor correcte styling op GitHub Pages
 
-# Add launch buttons
+# Launch knoppen (optioneel, kan je weghalen als je ze niet wil)
 launch_buttons:
   binderhub_url: ""
   colab_url: "https://colab.research.google.com"
   jupyterhub_url: ""
 
+# Extra sphinx instellingen
 sphinx:
   extra_extensions:
-    # This is to work around the bug of no syntax highlighting
-    - "IPython.sphinxext.ipython_console_highlighting"
+    - "IPython.sphinxext.ipython_console_highlighting"  # Fix voor syntax highlighting
   config:
     html_js_files:
-      # This is for plotly to work
-      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js  # Plotly fix
